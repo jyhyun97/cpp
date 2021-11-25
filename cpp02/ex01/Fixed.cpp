@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Fixed.cpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/25 17:07:21 by jeonhyun          #+#    #+#             */
+/*   Updated: 2021/11/25 17:07:24 by jeonhyun         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Fixed.hpp"
 
 Fixed::Fixed()
@@ -40,14 +52,17 @@ Fixed &Fixed::operator=(const Fixed &source)
 
 int Fixed::getRawBits(void) const
 {
-    std::cout << "getRawBits member function called" << std::endl;
     return (this->fixedPointValue);
 };
 
 void Fixed::setRawBits(int const raw)
 {
-    std::cout << "setRawBits member function called" << std::endl;
     this->fixedPointValue = raw;
+};
+
+int Fixed::toInt(void) const
+{
+    return (this->fixedPointValue / (1 << this->numberOfFractionalBits));
 };
 
 float Fixed::toFloat(void) const
@@ -55,7 +70,8 @@ float Fixed::toFloat(void) const
     return ((float)this->fixedPointValue / (float)(1 << this->numberOfFractionalBits));
 };
 
-int Fixed::toInt(void) const
+std::ostream &operator<<(std::ostream &out, const Fixed &fixed)
 {
-    return (this->fixedPointValue / (1 << this->numberOfFractionalBits));
+    out << fixed.toFloat();
+    return (out);
 };

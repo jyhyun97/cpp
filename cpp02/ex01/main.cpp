@@ -1,11 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/25 17:15:06 by jeonhyun          #+#    #+#             */
+/*   Updated: 2021/11/25 17:15:08 by jeonhyun         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <iostream>
 #include "Fixed.hpp"
-
-std::ostream &operator << (std::ostream &out, const Fixed &fixed)
-{
-    out << fixed.toFloat();
-    return (out);
-};
 
 int main(void)
 {
