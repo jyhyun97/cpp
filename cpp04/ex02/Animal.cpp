@@ -1,0 +1,37 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Animal.cpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/30 17:01:10 by jeonhyun          #+#    #+#             */
+/*   Updated: 2021/12/03 15:09:15 by jeonhyun         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "Animal.hpp"
+
+Animal::Animal(){
+    std::cout << "Animal class constructor~~" << std::endl;
+    type = "animal";
+};
+Animal::~Animal(){
+    std::cout << "Animal class destructor~~" << std::endl;
+};
+
+Animal::Animal(const Animal &origin){
+    *this = origin;
+};
+Animal &Animal::operator=(const Animal &origin){
+    if (this == &origin)
+        return (*this);
+    this->type = origin.getType();
+    return (*this);
+};
+
+void Animal::makeSound() const {};
+
+std::string Animal::getType() const {
+    return (this->type);
+};
