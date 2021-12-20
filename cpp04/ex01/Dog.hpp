@@ -6,7 +6,7 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 17:01:29 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/12/03 11:52:39 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/12/16 17:16:28 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,8 @@ class Dog : public Animal{
         Dog(const Dog &origin);
         Dog &operator=(const Dog &origin);
         void makeSound() const;
+        Brain *getBrain();
+
 };
 
 

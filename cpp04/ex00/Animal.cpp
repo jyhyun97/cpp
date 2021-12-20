@@ -6,18 +6,18 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 17:01:10 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/11/30 17:01:12 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/12/16 17:19:10 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Animal.hpp"
 
 Animal::Animal(){
-    std::cout << "Animal class constructor~~" << std::endl;
+    std::cout << "Animal class constructor" << std::endl;
     type = "animal";
 };
 Animal::~Animal(){
-    std::cout << "Animal class destructor~~" << std::endl;
+    std::cout << "Animal class destructor" << std::endl;
 };
 
 Animal::Animal(const Animal &origin){

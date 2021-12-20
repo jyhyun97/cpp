@@ -6,18 +6,18 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 17:01:10 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/12/03 16:30:05 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/12/16 17:19:51 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "WrongAnimal.hpp"
 
 WrongAnimal::WrongAnimal(){
-    std::cout << "WrongAnimal class constructor~~" << std::endl;
+    std::cout << "WrongAnimal class constructor" << std::endl;
     type = "WrongAnimal";
 };
 WrongAnimal::~WrongAnimal(){
-    std::cout << "WrongAnimal class destructor~~" << std::endl;
+    std::cout << "WrongAnimal class destructor" << std::endl;
 };
 
 WrongAnimal::WrongAnimal(const WrongAnimal &origin){

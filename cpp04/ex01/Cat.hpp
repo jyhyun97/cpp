@@ -6,7 +6,7 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 17:01:20 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/12/03 11:38:00 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/12/16 17:18:03 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ class Cat : public Animal{
         ~Cat();
         Cat(const Cat &origin);
         Cat &operator=(const Cat &origin);
+        Brain *getBrain();
         
         void makeSound() const;
 };

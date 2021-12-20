@@ -1,15 +1,3 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   Brain.cpp                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/12/03 16:40:29 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/12/03 16:40:29 by jeonhyun         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
-
 #include "Brain.hpp"
 
 Brain::Brain(){
@@ -27,6 +15,14 @@ Brain::~Brain(){
 
 Brain::Brain(const Brain &origin){
     *this = origin;
+};
+
+void Brain::setIdea(int idx, std::string str){
+    this->idea[idx] = str;
+};
+
+std::string Brain::Getidea(int idx){
+    return (this->idea[idx]);
 };
 
 Brain &Brain::operator=(const Brain &origin){
