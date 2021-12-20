@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Brain.cpp                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/20 11:43:39 by jeonhyun          #+#    #+#             */
+/*   Updated: 2021/12/20 11:43:41 by jeonhyun         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Brain.hpp"
 
 Brain::Brain(){
@@ -21,7 +33,7 @@ void Brain::setIdea(int idx, std::string str){
     this->idea[idx] = str;
 };
 
-std::string Brain::Getidea(int idx){
+std::string Brain::GetIdea(int idx){
     return (this->idea[idx]);
 };
 

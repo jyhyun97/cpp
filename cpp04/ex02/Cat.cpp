@@ -6,7 +6,7 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 17:01:16 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/12/03 14:00:45 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/12/16 17:18:40 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,27 +14,27 @@
 
 Cat::Cat()
 {
-    std::cout << "Cat class constructor~~" << std::endl;
+    std::cout << "Cat class constructor" << std::endl;
     type = "Cat";
     brain = new Brain;
 };
 
 Cat::~Cat()
 {
-    std::cout << "Cat class destructor~~" << std::endl;
+    std::cout << "Cat class destructor" << std::endl;
     delete brain;
 };
 
 Cat::Cat(const Cat &origin)
 {
-    std::cout << "Cat class copy constructor~~" << std::endl;
+    std::cout << "Cat class copy constructor" << std::endl;
     this->type = origin.type;
     this->brain = new Brain(*origin.brain);
 };
 
 Cat &Cat::operator=(const Cat &origin)
 {
-    std::cout << "Cat class assignment operator~~" << std::endl;
+    std::cout << "Cat class assignment operator" << std::endl;
     if (this == &origin)
         return (*this);
     this->type = origin.type;
@@ -47,4 +47,8 @@ Cat &Cat::operator=(const Cat &origin)
 void Cat::makeSound() const
 {
     std::cout << "nyang nyang" << std::endl;
+};
+
+Brain *Cat::getBrain(){
+    return (this->brain);
 };

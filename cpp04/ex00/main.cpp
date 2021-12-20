@@ -6,7 +6,7 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 17:01:32 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/12/03 16:35:34 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/12/20 11:53:56 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #include "WrongAnimal.hpp"
 #include "WrongCat.hpp"
 
+//Animal, WrongAnimal 차이 보여주기, virtual 함수 설명
 
 int main()
 {

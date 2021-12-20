@@ -6,7 +6,7 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 16:41:25 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/12/03 16:41:26 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/12/20 14:13:06 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@
 #include "IMateriaSource.hpp"
 #include "MateriaSource.hpp"
 #include "Character.hpp"
+
+//이 문제에서 비슷한 클래스인 Ice, Cure를 똑같이 use하는데 각각 다른 출력이 나오는 것을 예시로 들기
 
 int main()
 {

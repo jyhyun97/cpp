@@ -6,7 +6,7 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/03 16:41:21 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/12/03 16:41:21 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/12/20 14:08:16 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 class AMateria;
 
-class ICharacter //인터페이스는 자기가 직접 인터페이스를 생성 X 저 메소드들은 클래스 작성해서 구현한다
+class ICharacter
 {
     public:
         virtual ~ICharacter() {}

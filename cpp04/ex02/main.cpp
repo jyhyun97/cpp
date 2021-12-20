@@ -6,7 +6,7 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 17:01:32 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/12/03 15:20:53 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/12/20 11:52:32 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 
 int main()
 {
-    Animal *test = new Dog();//animal로 바꿨을 때 생성되지 않아야 함
+    Animal *test = new Dog();//Animal로 바꿨을 때 생성되지 않아야 함
     test->makeSound();
     delete test;
     return (0);

@@ -6,12 +6,12 @@
 #    By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/30 17:01:35 by jeonhyun          #+#    #+#              #
-#    Updated: 2021/12/03 16:34:06 by jeonhyun         ###   ########.fr        #
+#    Updated: 2021/12/20 11:42:36 by jeonhyun         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = ex00
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror -std=c++98
 SRCS = main.cpp\
 		Animal.cpp\
 		Cat.cpp\
