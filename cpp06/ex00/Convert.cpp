@@ -6,7 +6,7 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/16 15:59:05 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/12/16 15:59:06 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/12/22 16:49:06 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,7 @@ Convert &Convert::operator=(const Convert &origin){
         return (*this);
     return (*this);
 };
+
 void Convert::convertChar(const char *numString){
     double rst = atof(numString);
     std::cout << "char : ";

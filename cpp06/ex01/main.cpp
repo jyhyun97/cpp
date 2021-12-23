@@ -6,7 +6,7 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/16 16:00:03 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/12/16 16:00:05 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/12/23 14:03:26 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 
 struct Data{
     int test;
+    std::string test2;
 };
 
 uintptr_t serialize(Data* ptr){
@@ -31,6 +32,7 @@ int main()
 {
     Data a;
     a.test = 42;
+    a.test2 = "hello world";
     uintptr_t b = serialize(&a);
     Data *c = deserialize(b);
 
