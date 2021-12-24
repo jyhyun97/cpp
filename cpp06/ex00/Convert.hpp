@@ -14,7 +14,7 @@
 # define CONVERT_HPP
 
 #include <iostream>
-#include <cmath>
+#include <math.h>
 
 class Convert{
     public :
