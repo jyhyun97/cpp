@@ -6,7 +6,7 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/16 16:00:45 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/12/16 16:00:50 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/12/24 14:23:29 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,36 @@ void identify(Base* p){
 }
 
 void identify(Base& p){
-    Base *q = &p;
-    identify(q);
+    try
+    {
+        A testA = dynamic_cast<A &>(p);
+        std::cout << "A" << std::endl;
+        return ;
+    }
+    catch(std::bad_cast e)
+    {
+        std::cerr << e.what() << '\n';
+    }
+    try
+    {
+        B testB = dynamic_cast<B &>(p);
+        std::cout << "B" << std::endl;
+        return ;
+    }
+    catch(std::bad_cast e)
+    {
+        std::cerr << e.what() << '\n';
+    }
+    try
+    {
+        C testC = dynamic_cast<C &>(p);
+        std::cout << "C" << std::endl;
+        return ;
+    }
+    catch(std::bad_cast e)
+    {
+        std::cerr << e.what() << '\n';
+    }
 }
 
 int main()

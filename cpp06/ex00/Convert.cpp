@@ -6,7 +6,7 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/16 15:59:05 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/12/22 16:49:06 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/12/24 14:13:23 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void Convert::convertChar(const char *numString){
         std::cout << "'" << static_cast<char>(rst) << "'" << std::endl;
     }
     catch(const std::exception &e){
-        std::cout << e.what() << std::endl;
+        std::cerr << e.what() << std::endl;
     }
 };
 void Convert::convertInt(const char *numString){
@@ -45,7 +45,7 @@ void Convert::convertInt(const char *numString){
     }
     catch (const std::exception &e)
     {
-        std::cout << e.what() << std::endl;
+        std::cerr << e.what() << std::endl;
     }
 };
 void Convert::convertFloat(const char *numString){
@@ -67,7 +67,7 @@ void Convert::convertFloat(const char *numString){
         }
     }
     catch(std::exception &e){
-        std::cout << e.what() << std::endl;
+        std::cerr << e.what() << std::endl;
     }
 };
 void Convert::convertDouble(const char *numString){
@@ -89,6 +89,6 @@ void Convert::convertDouble(const char *numString){
         }
     }
     catch(std::exception &e){
-        std::cout << e.what() << std::endl;
+        std::cerr << e.what() << std::endl;
     }
 };

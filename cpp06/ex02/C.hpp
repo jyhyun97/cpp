@@ -6,7 +6,7 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/16 16:00:42 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/12/16 16:00:43 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/12/24 14:21:14 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@
 #include "Base.hpp"
 
 class C : public Base{
-    ~C(){};
+    public :
+        ~C(){};
 };
 
 #endif
