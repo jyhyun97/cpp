@@ -6,7 +6,7 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/16 16:08:46 by jeonhyun          #+#    #+#             */
-/*   Updated: 2021/12/16 16:08:47 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2021/12/26 16:48:27 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ int main(int, char**)
     {
         numbers[i] = rand();
     }
+
     delete [] mirror;//
     return 0;
 }
