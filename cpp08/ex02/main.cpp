@@ -6,7 +6,7 @@
 /*   By: jeonhyun <jeonhyun@student.42seoul.kr>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/03 17:02:37 by jeonhyun          #+#    #+#             */
-/*   Updated: 2022/01/03 17:02:37 by jeonhyun         ###   ########.fr       */
+/*   Updated: 2022/01/05 16:51:51 by jeonhyun         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ int main()
     MutantStack<int> mstack;
     mstack.push(5);
     mstack.push(17);
-    std::cout << mstack.top() << std::endl;
+    std::cout << "top : " <<  mstack.top() << std::endl;
     mstack.pop();
-    std::cout << mstack.size() << std::endl;
+    std::cout << "size : " << mstack.size() << std::endl;
     mstack.push(3);
     mstack.push(5);
     mstack.push(737);
@@ -33,9 +33,12 @@ int main()
     --it;
     while (it != ite)
     {
-        std::cout << *it << std::endl;
+        std::cout << "m stack : " << *it << std::endl;
         ++it;
     }
     std::stack<int> s(mstack);
+    std::cout << "s stack : " << s.top() << std::endl;
+    s.push(42);
+    std::cout << "s stack : " << s.top() << std::endl;
     return 0;
 }
